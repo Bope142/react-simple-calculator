@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Oswald-Bold";
+  src: url("../../fonts/Oswald-Bold.ttf");
+}
+@font-face {
+  font-family: "Oswald-Medium";
+  src: url("../../fonts/Oswald-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("../../fonts/Oswald-Regular.ttf");
+}
+
+$fontBold: "Oswald-Bold", "sans-serif";
+$fontMedium: "Oswald-Medium", "sans-serif";
+$fontRegular: "Oswald-Regular", "sans-serif";
+$neutral_1: #000000;
+$neutral_2: #ffffff;
+$neutral_3: rgba(#000000, 0.2);
+
+$padding__section: 100px;
