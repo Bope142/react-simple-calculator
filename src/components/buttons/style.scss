@@ -1,0 +1,22 @@
+@import "../../assets/styles/main.style/variable.scss";
+.btn {
+  border: none;
+  border-radius: 0.7rem;
+  outline: none;
+  font-family: $fontMedium;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.041);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  color: #ffffff;
+  transition: all 0.2s linear;
+  //   &:hover {
+  //     opacity: 0.7;
+  //   }
+}
+
+.btn-function {
+  background: #051937;
+}

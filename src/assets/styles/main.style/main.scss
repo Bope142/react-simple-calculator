@@ -70,6 +70,8 @@ body {
   color: #ffffffb9;
   letter-spacing: 0.1rem;
   font-family: $fontRegular;
+  height: 20px;
+  flex: none;
 }
 
 .container__app .container__result {
@@ -77,9 +79,18 @@ body {
   align-items: center;
   margin-bottom: 35px;
   justify-content: end;
+  text-align: right;
   color: #ffffff;
   font-size: 1.8rem;
   font-family: $fontBold;
+  // & input {
+  //   text-align: right;
+  //   color: #ffffff;
+  //   font-size: 1.8rem;
+  //   font-family: $fontBold;
+  //   background: none;
+  //   border: none;
+  // }
 }
 
 .container__button_operation_top {
@@ -87,29 +98,6 @@ body {
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
-}
-
-// global style button
-.btn {
-  border: none;
-  border-radius: 0.7rem;
-  outline: none;
-  font-family: $fontMedium;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.041);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(1.8px);
-  -webkit-backdrop-filter: blur(1.8px);
-  color: #ffffff;
-  transition: all 0.2s linear;
-  &:hover {
-    opacity: 0.7;
-  }
-}
-
-.btn-function {
-  background: #051937;
 }
 
 .container__main__button {
@@ -145,5 +133,17 @@ body {
     & .btn {
       background: #051937 !important;
     }
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .container__app {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 255px) {
+  .container__app {
+    width: auto;
   }
 }
