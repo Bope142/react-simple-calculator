@@ -26,5 +26,124 @@ body {
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  background: rgb(0, 0, 0);
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+.App {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+}
+
+.container__app {
+  border-radius: 0.5rem;
+  width: 300px;
+  height: auto;
+  padding: 20px;
+  overflow: hidden;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  padding-top: 50px;
+  flex: none;
+  align-self: c;
+}
+
+.container__app .container__result__typing {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  justify-content: end;
+  color: #ffffffb9;
+  letter-spacing: 0.1rem;
+  font-family: $fontRegular;
+}
+
+.container__app .container__result {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  justify-content: end;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: $fontBold;
+}
+
+.container__button_operation_top {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
+
+// global style button
+.btn {
+  border: none;
+  border-radius: 0.7rem;
+  outline: none;
+  font-family: $fontMedium;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.041);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  color: #ffffff;
+  transition: all 0.2s linear;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.btn-function {
+  background: #051937;
+}
+
+.container__main__button {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 66px;
+  // background: red;
+  column-gap: 10px;
+  height: 80%;
+  margin-top: 10px;
+
+  & .main__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    & .container__numbers {
+      display: grid;
+      align-items: center;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    & .content__btm {
+      display: grid;
+      grid-template-columns: 1fr 30%;
+      column-gap: 10px;
+    }
+  }
+  & .main__right {
+    flex: none;
+    display: grid;
+    grid-template-rows: 25% 28% 1fr;
+    row-gap: 10px;
+    & .btn {
+      background: #051937 !important;
+    }
+  }
 }
