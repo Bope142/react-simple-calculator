@@ -44,7 +44,7 @@ A straightforward React project implementing a basic calculator with a user-frie
 
 ## Online Demo
 
-Check out the online demo deployed on Vercel: [React Simple Calculator](https://your-vercel-app-url.com)
+Check out the online demo deployed on Vercel: [React Simple Calculator](https://react-simple-calculator-two.vercel.app/)
 
 ## Tech Stack
 
