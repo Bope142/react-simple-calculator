@@ -1,1 +1,0 @@
-# react-simple-calculator
